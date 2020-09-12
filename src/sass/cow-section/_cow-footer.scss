@@ -1,0 +1,25 @@
+.numbers{
+  padding-left:20px;
+  padding-top:16px;
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $titel-text-color;
+
+  &_description{
+   padding-bottom:98px;
+   padding-left:20px;
+   padding-right:70px;
+   font-family: $base-font;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 12px;
+   line-height: 170%;
+   color:$black;
+  }
+}
