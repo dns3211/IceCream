@@ -9,6 +9,15 @@ html {
   }
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
 body {
   margin: 0;
   background-color: $primery-bg-color;

@@ -1,0 +1,11 @@
+.slider-img {
+  width: 320px;
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 1280px;
+  }
+}

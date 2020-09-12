@@ -1,2 +1,69 @@
-<img src="./images/demo.jpg" alt="" />
-<h1>fgmnbfm</h1>
+<section class="section-slider container">
+  <picture>
+    <source
+      srcset="./images/slider@1x.webp 1x, ./images/slider@2x.webp 2x"
+      type="image/webp"
+    />
+    <img
+      class="slider-img"
+      srcset="./images/slider@1x.jpg 1x, ./images/slider@2x.jpg 2x"
+      src="./images/slider@1x.jpg"
+      alt="slider"
+    />
+  </picture>
+  <ul class="slider-items">
+    <li>
+      <picture>
+        <source srcset="./images/slider-firstwoman.webp" type="image/webp" />
+        <img class="slider-img" src="./images/slider-firstwoman.webp" alt="" />
+      </picture>
+      <p class="slider-text">
+        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis
+        in nibh vel risus.
+      </p>
+      <p class="slider-text">Emily, Los Angeles</p>
+    </li>
+    <li>
+      <picture>
+        <source srcset="./images/slider-secondwoman.webp" type="image/webp" />
+        <img class="slider-img" src="./images/slider-secondwoman.webp" alt="" />
+      </picture>
+      <!-- <p class="slider-text">
+        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis
+        in nibh vel risus.
+      </p>
+      <p class="slider-text">Emily, Los Angeles</p> -->
+    </li>
+    <li>
+      <picture>
+        <source srcset="./images/slider-thirdwoman.webp" type="image/webp" />
+        <img class="slider-img" src="./images/slider-thirdwoman.webp" alt="" />
+      </picture>
+      <!-- <p class="slider-text">
+        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis
+        in nibh vel risus.
+      </p>
+      <p class="slider-text">Emily, Los Angeles</p> -->
+    </li>
+  </ul>
+  <ul class="slider-control">
+    <li>
+      <svg width="13px" height="12px">
+        <use href="./images/spreat.svg#icon-slider-house"></use>
+      </svg>
+    </li>
+    <li>
+      <svg width="13px" height="12px">
+        <use href="./images/spreat.svg#icon-slider-circle"></use>
+      </svg>
+    </li>
+    <li>
+      <svg width="12px" height="12px">
+        <use href="./images/spreat.svg#icon-slider-circle"></use>
+      </svg>
+    </li>
+  </ul>
+</section>
