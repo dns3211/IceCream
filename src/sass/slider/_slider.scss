@@ -1,4 +1,4 @@
-.slider-img {
+.slider-first-img {
   width: 320px;
 
   @media screen and (min-width: $tablet) {
@@ -7,5 +7,154 @@
 
   @media screen and (min-width: $desctop) {
     width: 1280px;
+  }
+}
+
+.slider-text {
+  position: relative;
+  padding: 43px 66px 26px 57px;
+
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  color: $secondary-text-color;
+  background-color: $slider-bg;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 26px;
+    left: 58px;
+    z-index: 0;
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/slider-hz.webp);
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 47px 80px 34px 80px;
+    width: 620px;
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+
+    &::before {
+      left: 42px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    background-color: $primery-bg-color;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 47px 89px 39px 87px;
+    width: 926px;
+    font-size: 16px;
+    line-height: 1.86;
+
+    &::before {
+      left: 50px;
+      top: 32px;
+    }
+  }
+}
+
+.slider-border {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -33px;
+    width: 180px;
+    border: 1px solid $text-border;
+  }
+}
+
+.slider-items {
+  text-align: center;
+  margin: 80px 0 30px 0;
+
+  @media screen and (min-width: $tablet) {
+    margin: 121px 0 35px 0;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin: 123px 0 35px 0;
+  }
+}
+
+.slider-second-img {
+  margin-bottom: 29px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 19px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 15px;
+  }
+}
+
+// .hidden {
+//   visibility: hidden;
+//   position: absolute;
+// }
+
+.slider-third-title {
+  position: relative;
+  margin: 52px 0 30px 0;
+
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  color: $secondary-text-color;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 121px;
+
+    width: 32px;
+    height: 4px;
+
+    background-image: url(../images/slider-dots.svg);
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin: 42px 0 35px 0;
+    font-size: 16px;
+    &::before {
+      left: 328px;
+    }
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin: 34px 0 35px 0;
+    font-size: 20px;
+    &::before {
+      left: 507px;
+    }
+  }
+}
+
+.slider-control {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 86px;
+}
+
+.slider-control-item {
+  margin-right: 18px;
+
+  &:last-child {
+    margin-right: 0;
   }
 }
