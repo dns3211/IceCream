@@ -1,0 +1,68 @@
+/* Базові стилі */
+* {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+* {
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $primery-bg-color;
+  color: $primary-text-color;
+  font-family: $base-font;
+  letter-spacing: 0.03em;
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $mobile) {
+    width: 280px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 697px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 1053px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
