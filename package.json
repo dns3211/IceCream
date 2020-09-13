@@ -1,13 +1,13 @@
 {
-  "name": "parcel-project-template",
+  "name": "IceCream",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://github.com/dns321/Ice_Cream",
+  "homepage": "https://goitacademy.github.io/parcel-project-template",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url=/Ice_Cream/",
+    "predeploy": "npm run build -- --public-url=/parcel-project-template/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
