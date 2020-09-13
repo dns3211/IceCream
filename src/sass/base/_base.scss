@@ -1,8 +1,11 @@
 /* Базові стилі */
+<<<<<<< HEAD
 * {
   margin: 0;
 }
 
+=======
+>>>>>>> origin/dev
 html {
   box-sizing: border-box;
 }
@@ -13,6 +16,17 @@ html {
   }
 }
 
+<<<<<<< HEAD
+=======
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+>>>>>>> origin/dev
 body {
   margin: 0;
   background-color: $primery-bg-color;
@@ -30,11 +44,15 @@ h3 {
   margin-top: 0;
 }
 
+<<<<<<< HEAD
 a {
   text-decoration: none;
 }
 
 ul {
+=======
+.list {
+>>>>>>> origin/dev
   list-style: none;
   margin: 0;
   padding: 0;
