@@ -184,6 +184,20 @@
   margin-right: 18px;
 }
 
+.siema button:first-of-type:active {
+  background: transparent;
+  background-image: url(../images/slider-houce.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// .siema button:first-of-type:checked {
+//   background: transparent;
+//   background-image: url(../images/slider-houce.svg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
+
 .siema button:last-of-type {
   margin-left: 18px;
 }
