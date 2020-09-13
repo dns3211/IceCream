@@ -1,233 +1,214 @@
 .about-us {
-    background: #FFF5F6;
+  background: #fff5f6;
 
-    
- @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     background-image: url(../images/footer-bg.webp);
     background-size: 100%;
     background-repeat: no-repeat;
-
- }
-    }
+  }
+}
 
 .about-us-list_container {
-    background: #FFF5F6;
-    margin-bottom: 54px;
+  background: #fff5f6;
+  margin-bottom: 54px;
 
-     @media screen and (min-width: 768px) {
-         display: flex;
-     }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 
-     @media screen and (min-width: 1280px) {
-        display: flex;
-        justify-content: center;
-
-    }
-
-
-
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .about-us-list_item {
-    margin-left: auto;
-    margin-right: auto;
-    background: #FFFFFF;
-    padding: 43px 21px 43px 20px;
-    width: 220px;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
+  position: relative;
+  transform: translateY(-84px);
 
-    @media screen and (max-width: 767px){
-        &:not(:last-child) {
-            margin-bottom: 20px;
-        }
-    }
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  padding: 43px 21px 43px 20px;
+  width: 220px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
 
-            &:not(:last-child) {
-                margin-right: 20px;
-            }
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
     }
-    
-    @media screen and (min-width: 1280px) {
-        margin: 0;
-        
-        
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    &:not(:last-child) {
+      margin-right: 20px;
     }
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .about-us-list-item_cafe {
-width: 80px;
-background: #F0D1A5;
-border-radius: 4px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 25px;
+  width: 80px;
+  background: #f0d1a5;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 .about-us-list-item_cafe2 {
-    width: 80px;
-    background: #C2E297;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
-    }
-    
-
-.about-us-list-cafe-text {
-
-margin: 0;
-font-weight: 500;
-font-size: 12px;
-line-height: 186%;
-letter-spacing: 0.04em;
-color: #FFFFFF;
+  width: 80px;
+  background: #c2e297;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
-
-
-
+.about-us-list-cafe-text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
 
 .about-us-list-city-title {
-font-family: DM Sans;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 186%;
-letter-spacing: 0.04em;
-color: #000000;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: #000000;
 }
 
 .about-us-list-city-text {
-font-family: DM Sans;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 18px;
-color: #907E82;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907e82;
 }
 
 .about-us-grey-border {
-    width: 100%;
-padding-bottom: 25px;
-border-bottom: 1px solid #E1E1E1;;
-margin-bottom: 25px;
+  width: 100%;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 25px;
 }
 
 .about-us-buttons-container {
-display: block;
+  display: block;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .about-us-buttons-item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &:last-child {
+    padding-bottom: 113px;
+  }
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+
     &:not(:last-child) {
-        margin-bottom: 10px;
+      margin-bottom: 0;
+      margin-right: 14px;
     }
-    &:last-child {
-        padding-bottom: 113px;
-    }
-    margin-left: auto;
-    margin-right: auto;
-
-    
-    @media screen and (min-width: 768px) {
-        display: flex;
-        margin-left: 0;
-        margin-right: 0;
-
-        &:not(:last-child) {
-            margin-bottom: 0;
-            margin-right: 14px;
-
-        }
-    }
+  }
 }
 
 .about-us-list-city-text-workinghours {
-    font-family: DM Sans;
-font-weight: 500;
-font-size: 12px;
-line-height: 186%;
-color: #FFA5BA;
-margin: 0;
-&:not(:last-child) {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #ffa5ba;
+  margin: 0;
+  &:not(:last-child) {
     margin-bottom: 10px;
-}
+  }
 }
 
 .about-us-list-city-contacts {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .about-us-list-city-contacts-link {
-font-family: DM Sans;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 18px;
-color: #907E82;
-
-
-
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907e82;
 }
 
 .about-us-button {
-    display: block;
-    margin: 0 auto;
-    width: 162px;
+  display: block;
+  margin: 0 auto;
+  width: 162px;
+  height: 44px;
+  border-radius: 22px;
+  outline: 0;
+  border: 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+
+  @media screen and (min-width: 768px) {
+    width: 192px;
     height: 44px;
-    border-radius: 22px;
-    outline: 0;
-    border: 0;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
-  
+  }
 
-    @media screen and (min-width: 768px){
-        width: 192px;
-        height: 44px
-    }
-
-    @media screen and (min-width: 1280px){
-        width: 198px;
-        height: 44px;
-    }
+  @media screen and (min-width: 1280px) {
+    width: 198px;
+    height: 44px;
+  }
 }
 
 .red-button {
-    color: #FFFFFF;
-    background: #D41342;
-    border-radius: 22px;
-
+  color: #ffffff;
+  background: #d41342;
+  border-radius: 22px;
 }
 
 .white-button {
-    background: #FFFFFF;
-    color: #D41443;
-    border-radius: 22px;
+  background: #ffffff;
+  color: #d41443;
+  border-radius: 22px;
 
-    &:hover,
-    &:focus {
-        background-color: #ECEBEB;
-    }
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 
 .about-us-button-icon {
-    width: 11px;
-    height: 11px;   
-    color: red;
-    fill: red;
-    margin-left: 14px;
-    
+  width: 11px;
+  height: 11px;
+  color: red;
+  fill: red;
+  margin-left: 14px;
 }
