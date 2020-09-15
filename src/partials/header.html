@@ -1,21 +1,48 @@
 <div class="backgound-color">
   <div class="header-container container">
     <div class="header-container_content">
-      <img src="./images/logo.png" alt="logo" width="200" height="50" />
-      <div class="section-burger">
-        <div class="overlay">
-          <nav class="overlayMenu">
-            <ul role="menu">
-              <li><a href="#" role="menuitem">Home</a></li>
-              <li><a href="#" role="menuitem">About us</a></li>
-              <li><a href="#" role="menuitem">How it’s made?</a></li>
-              <li><a href="#" role="menuitem">Our p[roducts</a></li>
-              <li><a href="#" role="menuitem">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="navBurger" role="navigation" id="navToggle"></div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <img
+        sccset="./images/logo.png 200W, ./images/logo2x.png 400W"
+        src="./images/logo.png"
+        alt="logo"
+        width="200"
+        height="50"
+      />
+      <button
+        type="button"
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls="menu-mobile"
+        data-menu-button
+      >
+        <svg class="button-icon" width="20px" height="20px">
+          <use class="icon-close" href="./images/spreat.svg#icon-close"></use>
+          <use class="icon-menu" href="./images/spreat.svg#icon-Burger"></use>
+        </svg>
+      </button>
+      <div class="menu-mobile сentering" id="menu-mobile" data-menu>
+        <nav class="burger_nav">
+          <div class="buy-buttom">
+            <a href="#" class="buy-buttom_t">Buy nav</a>
+          </div>
+          <ul class="site-nav list сentering">
+            <li class="site-nav-item">
+              <a href="#" class="site-nav-link">Home</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="#" class="site-nav-link">About us</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="#" class="site-nav-link">How it's made ?</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="#" class="site-nav-link">Our products</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="#" class="site-nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
     <div class="banner-container">
@@ -31,7 +58,29 @@
         <div class="product-link product-link_size">
           <a href="#" class="manufacturer link-text">How it’s made?</a>
         </div>
+        <div class="milk_box">
+          <p class="banner-text-milk">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+        </div>
       </div>
     </div>
   </div>
+  <script>
+    (() => {
+      const menuBtnRef = document.querySelector('[data-menu-button]');
+      const mobileMenuRef = document.querySelector('[data-menu]');
+
+      menuBtnRef.addEventListener('click', () => {
+        const expanded =
+          menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+
+        menuBtnRef.classList.toggle('is-open');
+        menuBtnRef.setAttribute('aria-expanded', !expanded);
+
+        mobileMenuRef.classList.toggle('is-open');
+      });
+    })();
+  </script>
 </div>
