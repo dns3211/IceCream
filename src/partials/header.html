@@ -8,23 +8,50 @@
         width="200"
         height="50"
       />
-      <button
-        type="button"
-        class="menu-button"
-        aria-expanded="false"
-        aria-controls="menu-mobile"
-        data-menu-button
-      >
-        <svg class="button-icon" width="20px" height="20px">
-          <use class="icon-close" href="./images/spreat.svg#icon-close"></use>
-          <use class="icon-menu" href="./images/spreat.svg#icon-Burger"></use>
-        </svg>
-      </button>
+      <div class="header_menu_bth">
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-mobile"
+          data-menu-button
+        >
+          <svg class="button-icon" width="20px" height="20px">
+            <use class="icon-close" href="./images/spreat.svg#icon-close"></use>
+            <use class="icon-menu" href="./images/spreat.svg#icon-Burger"></use>
+          </svg>
+        </button>
+        <div class="buy-buttom_menu">
+          <a href="#" class="buy-buttom_t_menu">
+            Buy now
+            <svg class="button-b_menu" width="6px" height="8px">
+              <use
+                class="icon-menu-arrow"
+                href="./images/spreat.svg#icon-menu-arrow"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </div>
       <div class="menu-mobile сentering" id="menu-mobile" data-menu>
         <nav class="burger_nav">
+          <!-- <button
+            type="button"
+            class="menu-button_burger"
+            aria-expanded="false"
+            aria-controls="menu-mobile"
+            data-menu-button
+          >
+            <svg class="button-icon" width="20px" height="20px">
+              <use
+                class="icon-close"
+                href="./images/spreat.svg#icon-close"
+              ></use>
+            </svg>
+          </button> -->
           <div class="buy-buttom">
             <a href="#" class="buy-buttom_t">
-              Buy nav
+              Buy now
               <svg class="button-b" width="6px" height="8px">
                 <use
                   class="icon-menu-arrow"
@@ -55,26 +82,66 @@
     </div>
     <div class="banner-container">
       <div class="banner-ice"></div>
+      <div class="right-box_p">
+        <img
+          sccset="./images/slider-pic4.png 200W, ./images/slider-pic42x.png 400W"
+          src="./images/slider-pic4.png"
+          alt="foto"
+          width="168"
+          height="144px"
+        />
+      </div>
+      <div class="right-box">
+        <div class="righr-box_one">
+          <p class="right-box_numbers">16</p>
+          <p class="right-box_word right-box_word_c">cafes</p>
+        </div>
+        <div class="right-box_one">
+          <p class="right-box_numbers">23</p>
+          <p class="right-box_word right-box_word_f">food tracks</p>
+        </div>
+      </div>
+
       <div class="banner-content">
-        <div class="banner-content_text">
+        <div class="banner-content_text banner-content_w">
           <span class="banner-text">ice cream made with</span>
           <span class="banner-text_second">passion</span>
         </div>
-        <div class="product-link">
-          <a href="#" class="link-text">Product</a>
-        </div>
-        <div class="product-link product-link_size">
-          <a href="#" class="manufacturer link-text">How it’s made?</a>
+        <div class="banner-content_w">
+          <div class="product-link">
+            <a href="#" class="link-text">Product</a>
+          </div>
+          <div class="product-link product-link_size">
+            <a href="#" class="manufacturer link-text">How it’s made?</a>
+          </div>
         </div>
         <div class="milk_box">
-          <p class="banner-text-milk">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-          </p>
+          <img
+            sccset="./images/slider-milk.png 200W, ./images/slider-milk2x.png 400W"
+            src="./images/slider-milk.png"
+            alt="foto"
+            width="124"
+            height="126px"
+          />
+          <div>
+            <p class="banner-text-milk">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <div class="milk-circle">
+              <img
+                src="./images/arrow-right.png"
+                alt=""
+                width="18px"
+                height="18px"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
   <script>
     (() => {
       const menuBtnRef = document.querySelector('[data-menu-button]');

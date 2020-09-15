@@ -14,15 +14,12 @@
   padding: 0;
   border: none;
   background-color: transparent;
-
   & .icon-close {
     display: none;
   }
-
   &.is-open .icon-close {
     display: block;
   }
-
   &.is-open .icon-menu {
     display: none;
   }
@@ -60,6 +57,64 @@
   height: 100vh;
   margin-top: 60px;
 }
+.header_menu_bth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 216px;
+  }
+}
+.buy-buttom_menu {
+  margin-right: 32px;
+  right: 0;
+  position: absolute;
+  width: 164px;
+  height: 44px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s linear;
+  outline: none;
+  display: inline-block;
+  border-radius: 20px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  &_size {
+    width: 82px;
+    height: 24px;
+  }
+  &:hover {
+    background-color: #d41443;
+  }
+  &:focus {
+    background-color: #d41443;
+  }
+  .buy-buttom_t_menu {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 44px;
+    color: #d41443;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: normal;
+    margin: 0 auto;
+    letter-spacing: 0.04em;
+    &:hover {
+      color: #ffffff;
+    }
+    &:focus {
+      color: #ffffff;
+    }
+  }
+}
 .header-container_content {
   width: 280px;
   height: 50px;
@@ -67,11 +122,15 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 146px;
+  @media screen and (min-width: 768px) {
+    width: 700px;
+    margin-bottom: 28px;
+  }
   .buy-buttom {
-    display: none;
+    display: block;
     margin-bottom: 20px;
   }
-  @media screen {
+  @media screen and (max-width: 3000px) {
     padding-top: 36px;
     align-items: center;
     & .buy-buttom {
@@ -119,6 +178,15 @@
         color: #ffffff;
       }
     }
+    .button-b_menu {
+      width: 20px;
+      height: 10px;
+      position: absolute;
+      right: 18px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
   }
 }
 .button-b {
@@ -145,7 +213,6 @@
 }
 .banner-content {
   position: absolute;
-  width: 218px;
   height: 62px;
 }
 .banner-text {
@@ -186,7 +253,6 @@
     background-color: #ffffff;
   }
 }
-
 .link-text {
   font-weight: 700;
   display: flex;
@@ -218,6 +284,7 @@
     width: 700px;
     margin-left: 34px;
     margin-right: 0;
+    padding-top: 30px;
   }
 }
 .burger_conteiner {
@@ -227,16 +294,27 @@
   align-items: center;
 }
 .milk_box {
-  @media (min-width: 768) and (max-width: 1279px) {
-    width: 126px;
-    height: 126px;
-    background: #ffb8ca url('../images/slider-milk.png') no-repeat;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
 .banner-text-milk {
-  display: none;
-  @media (min-width: 768) and (max-width: 1279px) {
-  }
+  margin-top: 42%;
+  color: #ffffff;
+  width: 120px;
+  height: 48px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 150%;
+}
+.milk-circle {
+  margin-top: 6%;
+}
+.banner-content_w {
+  width: 218px;
 }
 .disp_none {
   @media screen and (max-width: 1279px) {
@@ -262,6 +340,65 @@
     }
   }
   @media screen and (min-width: $tablet) {
+    display: block;
+  }
+}
+.right-box {
+  width: 60px;
+  height: 100px;
+  position: absolute;
+  right: 20px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+.right-box_numbers {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 32px;
+  color: #d41443;
+  z-index: 1;
+  position: relative;
+  padding-top: 10px;
+  &::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 100px;
+    right: 20px;
+    position: absolute;
+    z-index: -1;
+  }
+}
+.right-box_word {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 10px;
+  color: #ffffff;
+  position: absolute;
+}
+.right-box_word_c {
+  right: 24px;
+}
+.right-box_word_f {
+  left: -8px;
+}
+.righr-box_one {
+  margin-bottom: 20px;
+}
+.right-box_p {
+  position: absolute;
+  right: 34px;
+  display: none;
+  top: 280px;
+  @media screen and (min-width: 768px) {
     display: block;
   }
 }
