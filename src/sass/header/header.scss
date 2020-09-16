@@ -7,13 +7,22 @@
     background: #ffb8ca url('../images/Ellipse_table.png') no-repeat;
     background-position: 300px 40px;
   }
+  @media screen and (min-width: 1200px) {
+    background: #ffb8ca url('../images/Ellipse_3.png') no-repeat;
+    background-position: center 50px;
+  }
 }
 .menu-button {
+  width: 216px;
   z-index: 4;
   display: inline-flex;
   padding: 0;
   border: none;
   background-color: transparent;
+
+  @media screen and (max-width: 767px) {
+    width: 20px;
+  }
   & .icon-close {
     display: none;
   }
@@ -22,9 +31,13 @@
   }
   &.is-open .icon-menu {
     display: none;
+    width: 218px;
   }
-  @media screen and (min-width: 1279px) {
-    display: none;
+}
+.icon-close {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    left: 200px;
   }
 }
 .site-nav-link {
@@ -38,7 +51,6 @@
   font-size: 14px;
   line-height: 18px;
   display: flex;
-  width: 250px;
   height: 40px;
   &:hover {
     color: #d41443;
@@ -46,16 +58,14 @@
   &:focus {
     color: #d41443;
   }
+  @media screen and (min-width: 1200px) {
+    width: 120px;
+  }
 }
 .site-nav-item {
   height: 42px;
   display: flex;
   margin-left: 20px;
-}
-.burger_nav {
-  z-index: 1;
-  height: 100vh;
-  margin-top: 60px;
 }
 .header_menu_bth {
   display: flex;
@@ -63,6 +73,9 @@
   align-items: center;
   @media screen and (min-width: 768px) {
     width: 216px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
   }
 }
 .buy-buttom_menu {
@@ -79,6 +92,9 @@
   outline: none;
   display: inline-block;
   border-radius: 20px;
+  @media screen and (max-width: 766px) {
+    z-index: -1;
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -122,7 +138,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 146px;
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     width: 700px;
     margin-bottom: 28px;
   }
@@ -130,8 +146,7 @@
     display: block;
     margin-bottom: 20px;
   }
-  @media screen and (max-width: 3000px) {
-    padding-top: 36px;
+  @media screen and (max-width: 1200px) {
     align-items: center;
     & .buy-buttom {
       margin-top: 24px;
@@ -185,9 +200,6 @@
       right: 18px;
     }
   }
-  @media screen and (min-width: 768px) {
-    padding-top: 30px;
-  }
 }
 .button-b {
   width: 20px;
@@ -201,6 +213,7 @@
   position: absolute;
   top: 96px;
   right: 30px;
+
   background: url('../images/slider.png') no-repeat;
   @media screen and (min-width: 768px) {
     background: url('../images/slider-table-min.png') no-repeat;
@@ -209,6 +222,16 @@
     right: 0;
     top: 63px;
     left: 368px;
+  }
+  @media screen and (min-width: 1200px) {
+    background: url('../images/slider-pic7d.png') no-repeat;
+    background-position: 190px 50px;
+    width: 236px;
+    height: 556px;
+    position: absolute;
+    z-index: 4;
+    width: 100vh;
+    height: 100vh;
   }
 }
 .banner-content {
@@ -278,13 +301,14 @@
 .manufacturer {
   width: 82px;
 }
-.container {
-  width: 280px;
+.container_t {
+  padding-top: 6px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 768px) {
-    width: 700px;
     margin-left: 34px;
     margin-right: 0;
-    padding-top: 30px;
+    padding-top: 38px;
   }
 }
 .burger_conteiner {
@@ -316,14 +340,22 @@
 .banner-content_w {
   width: 218px;
 }
-.disp_none {
-  @media screen and (max-width: 1279px) {
-    display: none;
+
+.burger_nav {
+  z-index: 1;
+  height: 100vh;
+  margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(0);
   }
 }
 .menu-mobile {
   z-index: 3;
-  @media screen and (max-width: 1279px) {
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: 320px) and (max-width: 1199px) {
     position: absolute;
     top: 0;
     width: 250px;
@@ -332,15 +364,14 @@
     transition: $animation;
     text-align: center;
     background-color: #e17992;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
     border-top: 1px solid #ececec;
     &.is-open {
       display: block;
       transform: translateX(0);
     }
   }
-  @media screen and (min-width: $tablet) {
-    display: block;
+  @media screen and (min-width: 1200px) {
+    display: none;
   }
 }
 .right-box {
@@ -400,5 +431,18 @@
   top: 280px;
   @media screen and (min-width: 768px) {
     display: block;
+  }
+}
+.button-icon_menu {
+  position: relative;
+  left: 190px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.button-icon .icon-close {
+  @media screen and (min-width: 768px) {
+    display: none;
+    z-index: 8;
   }
 }
