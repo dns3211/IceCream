@@ -432,7 +432,7 @@ summary {
   .header_menu_bth {
     width: 216px;
     position: relative;
-    right: 30px;
+    right: -5px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -667,7 +667,7 @@ summary {
 }
 @media screen and (min-width: 768px) {
   .container_t {
-    margin-left: 34px;
+    margin-left: 0;
     margin-right: 0;
     padding-top: 38px;
   }
@@ -1699,7 +1699,7 @@ li {
   z-index: -1;
   width: 54px;
   height: 40px;
-  background-image: url(/slider-hz.67472919.webp);
+  background-image: url(/slider-lapk.1553a7d7.svg);
 }
 @media screen and (min-width: 768px) {
   .slider-text {
@@ -1906,7 +1906,7 @@ li {
 }
 
 .about-us-list-item_cafe2 {
-  width: 80px;
+  width: 138px;
   background: #c2e297;
   border-radius: 4px;
   display: flex;
