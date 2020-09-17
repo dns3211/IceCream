@@ -1,5 +1,5 @@
 .about-us {
-  background: #fff5f6;
+  background: $secondary-bg-color;
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/footer-bg.webp);
@@ -9,7 +9,7 @@
 }
 
 .about-us-list_container {
-  background: #fff5f6;
+  background: $secondary-bg-color;
   margin-bottom: 54px;
 
   @media screen and (min-width: 768px) {
@@ -28,7 +28,7 @@
 
   margin-left: auto;
   margin-right: auto;
-  background: #ffffff;
+  background: $primery-bg-color;
   padding: 51px 44px 62px 43px;
   width: 220px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -81,26 +81,24 @@
   font-size: 12px;
   line-height: 186%;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: $primery-bg-color;
 }
 
 .about-us-list-city-title {
-  font-family: DM Sans;
-  font-style: normal;
+  font-family: $base-font;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: $secondary-text-color;
 }
 
 .about-us-list-city-text {
-  font-family: DM Sans;
-  font-style: normal;
+  font-family: $base-font;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #907e82;
+  color: $primary-text-color;
 }
 
 .about-us-grey-border {
@@ -142,11 +140,11 @@
 }
 
 .about-us-list-city-text-workinghours {
-  font-family: DM Sans;
+  font-family: $base-font;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
-  color: #ffa5ba;
+  color: $third-title-color;
   margin: 0;
   &:not(:last-child) {
     margin-bottom: 10px;
@@ -158,12 +156,11 @@
 }
 
 .about-us-list-city-contacts-link {
-  font-family: DM Sans;
-  font-style: normal;
+  font-family: $base-font;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #907e82;
+  color:$primary-text-color;
 }
 
 .about-us-button {
@@ -190,26 +187,26 @@
 }
 
 .red-button {
-  color: #ffffff;
-  background: #d41342;
+  color: $primery-bg-color;
+  background: $titel-text-color;
   border-radius: 22px;
 }
 
 .white-button {
-  background: #ffffff;
-  color: #d41443;
+  background: $primery-bg-color;
+  color: $titel-text-color;
   border-radius: 22px;
 
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: $button-hover-color;
   }
 }
 
 .about-us-button-icon {
   width: 11px;
   height: 11px;
-  color: red;
-  fill: red;
+  color: $titel-text-color;
+  fill: $titel-text-color;
   margin-left: 14px;
 }

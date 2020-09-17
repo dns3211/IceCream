@@ -7,7 +7,7 @@
 }
 
 .footer-container {
-    background: #FFF5F6;
+    background: $secondary-bg-color;
     
 }
 .footer-container-top {
@@ -22,8 +22,8 @@
     line-height: 21px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    font-family: 'Titan One';
-    color: #FFA5BA;
+    font-family: $secondary-font;
+    color: $third-title-color;
 
     @media screen and (min-width: 768px){
     font-size: 26px;
@@ -40,12 +40,12 @@
 }
 
 .footer-title-text {
-    font-family: 'Titan One';
+    font-family: $secondary-font;
 font-size: 34px;
 line-height: 39px;
 letter-spacing: 0.04em;
 text-transform: uppercase;
-color: #D41443;
+color: $titel-text-color;
 width: 200px;
 height: 76px;
 
@@ -97,12 +97,11 @@ letter-spacing: 0.06em;
 }
 
 .footer-contacts-text {
-font-family: DM Sans;
+font-family: $base-font;
 text-align: right;
-font-style: normal;
 font-weight: bold;
 
-color: #000000;
+color: $secondary-text-color;
 }
 
 .footer-contacts-tel {
@@ -110,7 +109,7 @@ font-weight: 500;
 margin: 0;
 
 text-align: right;
-color: #D41342;
+color: $titel-text-color;
 
 }
 
@@ -140,7 +139,7 @@ color: #D41342;
 
     &:hover,
     &:focus {
-        fill: #D41443;
+        fill: $titel-text-color;
         
     }
 
@@ -161,15 +160,14 @@ color: #D41342;
         width: 150px;
     height: 42px;
     }
-    font-family: DM Sans;
-font-style: normal;
+    font-family: $base-font;
 font-weight: bold;
 font-size: 14px;
 line-height: 186%;
 
 letter-spacing: 0.02em;
 
-color: #907E82;
+color: $primary-text-color;
 
 
 }

@@ -16,26 +16,24 @@
 /* надпись*/
 
 .products_name {
-  font-family: Titan One;
-  font-style: Regular;
+  font-family: $secondary-font;
   font-size: 18px;
   line-height: 21px;
   line-height: 100%;
   vertical-align: Top;
-  color: #ffa5ba;
+  color: $third-title-color;
   display: flex;
   justify-content: center;
   margin-bottom: 16px;
 }
 
 .products_surname {
-  font-family: Titan One;
-  font-style: Regular;
+  font-family: $secondary-font;
   font-size: 34px;
   line-height: 39px;
   vertical-align: Top;
   letter-spacing: 4%;
-  color: #d41443;
+  color: $titel-text-color;
   display: flex;
   justify-content: center;
   margin-bottom: 160px;
@@ -77,9 +75,8 @@
 /*внутренность*/
 
 .list-item_name {
-  color: #ffffff;
-  font-family: Titan One;
-  font-style: Regular;
+  color: $primery-bg-color;
+  font-family: $secondary-font;
   font-size: 20px;
   line-height: 23px;
   line-height: 100%;
@@ -89,8 +86,8 @@
 .list-item_text {
   width: 200px;
   height: 124px;
-  color: #ffffff;
-  font-family: DM Sans;
+  color: $primery-bg-color;
+  font-family: $base-font;
   font-style: Bold;
   font-size: 14px;
   line-height: 21px;
@@ -132,7 +129,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #ffffff;
+  background: $primery-bg-color;
 }
 
 /*icecream*/
