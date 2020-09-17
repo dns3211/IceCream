@@ -1,0 +1,76 @@
+.cow-footer {
+  padding-left: 20px;
+  padding-right: 70px;
+  padding-bottom: 97px;
+
+  @media screen and(min-width:768px) {
+    padding-left: 36px;
+    @media screen and(min-width:1280px) {
+      padding-left: 115px;
+    }
+  }
+}
+.tasty {
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 40px;
+  }
+}
+.cow-pic {
+  margin-bottom: 38px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 30px;
+  }
+}
+.numbers {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $titel-text-color;
+
+  @media screen and(min-width:768px) {
+    font-size: 48px;
+    line-height: 55px;
+  }
+  @media screen and(min-width:1280px) {
+    font-size: 58px;
+    line-height: 66px;
+  }
+}
+.numbers_description {
+  font-family: $base-font;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 170%;
+  color: $secondary-text-color;
+
+  @media screen and(min-width:768px) {
+    width: 180px;
+    height: 71px;
+    font-size: 14px;
+    line-height: 174%;
+  }
+  @media screen and(min-width:1280px) {
+    width: 330px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 176%;
+  }
+}
+.cow-footer_section {
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+  }
+}

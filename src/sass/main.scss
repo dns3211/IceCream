@@ -3,12 +3,18 @@
  * Все паршалы подключаются сюда.
  */
 // шрифт
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Titan+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap');
 
 // Стили для файла с примером HTML-фрагмента
-@import "./utils/breakpoint";
-@import "./utils/variables";
+@import './utils/breakpoint';
+@import './utils/variables';
 
-@import "./base/base";
-@import "./base/normalise";
-@import "./slider/slider";
+@import './base/base';
+@import './base/normalise';
+@import './header/header';
+@import './products/products';
+@import './cow-section/_cow-head';
+@import './cow-section/_cow-footer';
+@import './slider/slider';
+@import './about-us/about-us';
+@import './footer/footer';
