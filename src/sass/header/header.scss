@@ -9,7 +9,7 @@
   }
   @media screen and (min-width: 1200px) {
     background: #ffb8ca url('../images/Ellipse_3.png') no-repeat;
-    background-position: center 50px;
+    background-position: 520px 40px;
   }
 }
 .menu-button {
@@ -96,6 +96,9 @@
   outline: none;
   display: inline-block;
   border-radius: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 130px;
+  }
   @media screen and (max-width: 766px) {
     z-index: -1;
   }
@@ -171,6 +174,9 @@
       }
     }
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 80px;
+  }
 }
 .button-b {
   width: 20px;
@@ -195,17 +201,19 @@
   }
   @media screen and (min-width: 1200px) {
     background: url('../images/slider-pic7d.png') no-repeat;
-    background-position: 100px 50px;
-    width: 236px;
+    top: 86px;
+    left: 660px;
     height: 556px;
-    position: absolute;
-    z-index: 3;
     width: 100vh;
   }
 }
 .banner-content {
   position: absolute;
   height: 62px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-top: 20px;
+  }
 }
 .banner-text {
   color: #ffffff;
@@ -233,7 +241,7 @@
   outline: none;
   display: inline-block;
   border-radius: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   &_size {
     width: 82px;
     height: 24px;
@@ -291,6 +299,15 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
+    width: 124px;
+    height: 124px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 188px;
+    height: 192px;
+    position: relative;
+    right: 53px;
+    margin-top: 40px;
   }
 }
 .banner-text-milk {
@@ -303,9 +320,25 @@
   font-weight: normal;
   font-size: 8px;
   line-height: 150%;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 20px;
+    margin-top: 32%;
+    font-size: 14px;
+    line-height: 140%;
+    width: 200px;
+    height: 78px;
+  }
 }
 .milk-circle {
   margin-top: 6%;
+  width: 18px;
+  height: 18px;
+  @media screen and (min-width: 1200px) {
+    width: 26px;
+    height: 26px;
+    margin-left: 20px;
+  }
 }
 .banner-content_w {
   width: 218px;
@@ -358,6 +391,11 @@
   @media screen and (min-width: 768px) {
     display: block;
   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 80px;
+    width: 72px;
+    height: 100px;
+  }
 }
 .right-box_numbers {
   font-family: 'Titan One';
@@ -368,7 +406,6 @@
   color: #d41443;
   z-index: 1;
   position: relative;
-  padding-top: 10px;
   &::after {
     content: '';
     width: 16px;
@@ -380,6 +417,21 @@
     position: absolute;
     z-index: -1;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    line-height: 53px;
+    &::after {
+      content: '';
+      width: 32px;
+      height: 32px;
+      background-color: #ffffff;
+      position: absolute;
+      border-radius: 100px;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
+  }
 }
 .right-box_word {
   font-family: 'DM Sans';
@@ -389,6 +441,10 @@
   line-height: 10px;
   color: #ffffff;
   position: absolute;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 .right-box_word_c {
   right: 24px;
@@ -396,8 +452,8 @@
 .right-box_word_f {
   left: -8px;
 }
-.righr-box_one {
-  margin-bottom: 20px;
+.right-box_two {
+  margin-top: 20px;
 }
 .right-box_p {
   position: absolute;
@@ -406,6 +462,15 @@
   top: 280px;
   @media screen and (min-width: 768px) {
     display: block;
+    width: 168px;
+    height: 144px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 390px;
+    display: block;
+    width: 294px;
+    height: 232px;
+    right: 150px;
   }
 }
 .button-icon_menu {
