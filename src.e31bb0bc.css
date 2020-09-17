@@ -406,7 +406,16 @@ summary {
   display: flex;
   margin-left: 20px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1279px) {
+  .site-nav-item {
+    border-bottom: 1px solid #e18298;
+    padding-top: 10px;
+  }
+  .site-nav-item:first-child {
+    border-top: 1px solid #e18298;
+  }
+}
+@media screen and (min-width: 1280px) {
   .site-nav-item {
     margin: 0;
     padding: 0;
