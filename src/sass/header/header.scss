@@ -65,7 +65,14 @@
   height: 42px;
   display: flex;
   margin-left: 20px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 1279px) {
+    border-bottom: 1px solid $border-color;
+    padding-top: 10px;
+    &:first-child {
+      border-top: 1px solid $border-color;
+    }
+  }
+  @media screen and (min-width: $desctop) {
     margin: 0;
     padding: 0;
     margin-right: 34px;
@@ -341,6 +348,7 @@
 .burger_nav {
   z-index: 1;
   height: 502px;
+
   @media screen and (min-width: $tablet) {
     height: 1020px;
   }
