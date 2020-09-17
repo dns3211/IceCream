@@ -11,7 +11,10 @@
 .products {
   // background-color:#E5E5E5;
   padding-top: 100px;
-  // padding-bottom: 98px;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 98px;
+  }
 }
 /* надпись*/
 
@@ -137,6 +140,10 @@
 .image-icecream {
   margin-top: -113px;
   margin-bottom: 22px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 20px;
+  }
 }
 
 /*media*/

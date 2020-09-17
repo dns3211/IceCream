@@ -62,7 +62,6 @@
   }
 }
 .site-nav-item {
-  width: 120px;
   height: 42px;
   display: flex;
   margin-left: 20px;
@@ -78,6 +77,8 @@
   align-items: center;
   @media screen and (min-width: 768px) {
     width: 216px;
+    position: relative;
+    right: 30px;
   }
   @media screen and (min-width: 1200px) {
     display: none;
@@ -339,8 +340,11 @@
 
 .burger_nav {
   z-index: 1;
+  height: 502px;
+  @media screen and (min-width: $tablet) {
+    height: 1020px;
+  }
   @media screen and (max-width: 1199px) {
-    height: 100vh;
     margin-top: 90px;
     margin-left: 16px;
   }
@@ -478,7 +482,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     position: relative;
-    width: 730px;
+    width: 542px;
     left: 8%;
     top: 14px;
   }
