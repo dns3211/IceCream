@@ -1,13 +1,15 @@
 .backgound-color {
-  height: 100vh;
+  height: 507px;
   position: relative;
   background: #ffb8ca url('../images/Ellipse.png') no-repeat;
   background-position: right 80px;
   @media screen and (min-width: 768px) {
+    height: 400px;
     background: #ffb8ca url('../images/Ellipse_table.png') no-repeat;
     background-position: 300px 40px;
   }
   @media screen and (min-width: 1200px) {
+    height: 643px;
     background: #ffb8ca url('../images/Ellipse_3.png') no-repeat;
     background-position: 520px 40px;
   }
@@ -204,7 +206,7 @@
     top: 86px;
     left: 660px;
     height: 556px;
-    width: 100vh;
+    width: 236px;
   }
 }
 .banner-content {
@@ -459,18 +461,18 @@
   position: absolute;
   right: 34px;
   display: none;
-  top: 280px;
+  top: 267px;
   @media screen and (min-width: 768px) {
     display: block;
     width: 168px;
     height: 144px;
   }
   @media screen and (min-width: 1200px) {
-    top: 390px;
+    top: 410px;
     display: block;
     width: 294px;
     height: 232px;
-    right: 150px;
+    right: 80px;
   }
 }
 .button-icon_menu {
@@ -490,7 +492,7 @@
     display: flex;
     position: relative;
     width: 730px;
-    left: 20%;
+    left: 13%;
     top: 10px;
   }
 }

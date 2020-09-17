@@ -103,6 +103,8 @@
 
 .slider-second-img {
   margin-bottom: 29px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 19px;
@@ -152,7 +154,7 @@
     margin: 34px 0 35px 0;
     font-size: 20px;
     &::before {
-      left: 507px;
+      left: 508px;
     }
   }
 }

@@ -11,7 +11,7 @@
 .products {
   // background-color:#E5E5E5;
   padding-top: 100px;
-  padding-bottom: 98px;
+  // padding-bottom: 98px;
 }
 /* надпись*/
 
@@ -112,9 +112,9 @@
   outline: none;
 }
 
-.list-item {
-  margin-bottom: 18px;
-}
+// .list-item {
+//   margin-bottom: 18px;
+// }
 
 /* точки*/
 
@@ -259,4 +259,8 @@
     margin-top: -223px;
     margin-bottom: 22px;
   }
+}
+
+.positiov {
+  position: absolute;
 }
